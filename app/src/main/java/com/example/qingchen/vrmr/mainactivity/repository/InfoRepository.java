@@ -1,22 +1,20 @@
-package com.example.qingchen.vrmr;
+package com.example.qingchen.vrmr.mainactivity.repository;
 
 import android.arch.lifecycle.LiveData;
-import android.arch.lifecycle.MutableLiveData;
-import android.util.Log;
 
+import com.example.qingchen.vrmr.DataBase.InfoDao;
+import com.example.qingchen.vrmr.DataBase.NewsBean;
+import com.example.qingchen.vrmr.bean.InfoBean;
+import com.example.qingchen.vrmr.net.NetWork;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import java.lang.reflect.TypeVariable;
 import java.util.List;
 
 import javax.inject.Inject;
 import javax.inject.Named;
-import javax.inject.Singleton;
 
 import rx.Observer;
-import rx.Scheduler;
-import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
 /**
@@ -55,7 +53,6 @@ public class InfoRepository {
                 //不能在主线程使用
                 Gson gson = new Gson();
                 String temp = gson.toJson(infoBean.getNewslist());
-                Log.e("------>",temp);
                 List<NewsBean> list = gson.fromJson(temp, new TypeToken<List<NewsBean>>() {
                 }.getType());
                 infoDao.insertAll(list);

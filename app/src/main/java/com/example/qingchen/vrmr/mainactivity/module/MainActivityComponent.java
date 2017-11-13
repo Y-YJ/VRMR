@@ -1,4 +1,6 @@
-package com.example.qingchen.vrmr;
+package com.example.qingchen.vrmr.mainactivity.module;
+
+import com.example.qingchen.vrmr.mainactivity.MainActivity;
 
 import dagger.Component;
 

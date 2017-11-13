@@ -1,4 +1,4 @@
-package com.example.qingchen.vrmr;
+package com.example.qingchen.vrmr.DataBase;
 
 import android.arch.persistence.room.Database;
 import android.arch.persistence.room.Room;

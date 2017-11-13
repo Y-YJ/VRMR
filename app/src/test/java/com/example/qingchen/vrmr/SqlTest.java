@@ -1,12 +1,12 @@
 package com.example.qingchen.vrmr;
 
 import android.content.Context;
-import android.test.AndroidTestCase;
-import android.test.mock.MockContext;
+
+import com.example.qingchen.vrmr.DataBase.InfoDataBase;
+import com.example.qingchen.vrmr.DataBase.NewsBean;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 /**
  * @author qingchen

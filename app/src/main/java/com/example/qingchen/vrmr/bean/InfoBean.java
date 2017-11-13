@@ -1,4 +1,4 @@
-package com.example.qingchen.vrmr;
+package com.example.qingchen.vrmr.bean;
 
 import android.arch.persistence.room.Entity;
 import android.arch.persistence.room.PrimaryKey;

@@ -1,4 +1,6 @@
-package com.example.qingchen.vrmr;
+package com.example.qingchen.vrmr.net;
+
+import com.example.qingchen.vrmr.bean.InfoBean;
 
 import retrofit2.http.GET;
 import rx.Observable;

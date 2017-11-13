@@ -1,7 +1,9 @@
 package com.example.qingchen.vrmr;
 
 import android.test.mock.MockContext;
-import android.util.Log;
+
+import com.example.qingchen.vrmr.DataBase.InfoDataBase;
+import com.example.qingchen.vrmr.DataBase.NewsBean;
 
 import org.junit.Test;
 

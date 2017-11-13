@@ -20,7 +20,6 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Room.databaseBuilder(this,InfoDataBase.class,"NewsBean").build();
         context=this;
     }
 }

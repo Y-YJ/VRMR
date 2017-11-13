@@ -1,0 +1,58 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "6f68d2bb108479f607c44f352ff3386c",
+    "entities": [
+      {
+        "tableName": "NewsBean",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`ctime` TEXT NOT NULL, `title` TEXT, `description` TEXT, `picUrl` TEXT NOT NULL, `url` TEXT, PRIMARY KEY(`ctime`, `picUrl`))",
+        "fields": [
+          {
+            "fieldPath": "ctime",
+            "columnName": "ctime",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "picUrl",
+            "columnName": "picUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "ctime",
+            "picUrl"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"6f68d2bb108479f607c44f352ff3386c\")"
+    ]
+  }
+}

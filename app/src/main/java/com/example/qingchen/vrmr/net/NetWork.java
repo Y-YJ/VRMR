@@ -1,4 +1,4 @@
-package com.example.qingchen.vrmr;
+package com.example.qingchen.vrmr.net;
 
 import okhttp3.OkHttpClient;
 import retrofit2.Retrofit;

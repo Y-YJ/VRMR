@@ -1,4 +1,4 @@
-package com.example.qingchen.vrmr;
+package com.example.qingchen.vrmr.DataBase;
 
 import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;

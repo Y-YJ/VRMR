@@ -1,4 +1,9 @@
-package com.example.qingchen.vrmr;
+package com.example.qingchen.vrmr.mainactivity.module;
+
+import com.example.qingchen.vrmr.DataBase.InfoDao;
+import com.example.qingchen.vrmr.DataBase.InfoDao_Impl;
+import com.example.qingchen.vrmr.DataBase.InfoDataBase;
+import com.example.qingchen.vrmr.MyApplication;
 
 import javax.inject.Named;
 
